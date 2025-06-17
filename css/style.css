@@ -161,3 +161,110 @@ footer {
     font-size: 1.6rem;
   }
 }
+.post-preview img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.blog-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+main {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  border-left: 1px solid #eee;
+  padding-left: 30px;
+  font-size: 0.95rem;
+}
+
+.sidebar h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #666;
+}
+
+.sidebar a:hover {
+  color: #000;
+}
+
+/* Stack layout on mobile */
+@media (max-width: 768px) {
+  .blog-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+}
+.newsletter-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-content input[type="email"] {
+  padding: 10px;
+  width: 70%;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.popup-content button {
+  padding: 10px 16px;
+  margin-top: 10px;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
+}

@@ -269,8 +269,8 @@ main {
   color: #aaa;
 }
 .post-card img {
-  width: 100%;
-  max-width: 100px; /* or smaller like 400px */
+  width: 25%;
+  max-width: 50px; /* or smaller like 400px */
   height: auto;
   border-radius: 10px;
   display: block;

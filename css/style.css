@@ -268,3 +268,11 @@ main {
   cursor: pointer;
   color: #aaa;
 }
+.post-card img {
+  width: 100%;
+  max-width: 500px; /* or smaller like 400px */
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 15px;
+}

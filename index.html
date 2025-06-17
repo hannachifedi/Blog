@@ -1,61 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wael’s Journal</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wael's Journal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header>
-    <h1>Wael’s Journal</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <h1 class="logo">Wael’s Journal</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="post-preview">
-      <h2><a href="blog/first-post.html">My First Blog Post</a></h2>
-      <p class="date">June 2025</p>
-      <p>This is a short preview of my first post. It’s about launching this blog and my journey so far...</p>
-    </section>
+    <div class="content blog-layout">
+      <main>
+        <section class="posts">
+          <article class="post-card">
+            <a href="blog/first-post.html">
+              <img src="blog/images/first-post.jpg" alt="First Post Thumbnail">
+              <h2>My First Blog Post</h2>
+            </a>
+            <p class="date">June 2025</p>
+            <p class="excerpt">This is where your personal, observational, deep, or even funny blog stories start.</p>
+          </article>
 
-    <section class="post-preview">
-      <h2><a href="blog/second-post.html">The Story Continues</a></h2>
-      <p class="date">June 2025</p>
-      <p>Second post goes deeper into my thoughts, experiences, or maybe just a coffee-fueled rant...</p>
-    </section>
+          <article class="post-card">
+            <a href="blog/second-post.html">
+              <img src="blog/images/second-post.jpg" alt="Second Post Thumbnail">
+              <h2>My Second Post</h2>
+            </a>
+            <p class="date">June 2025</p>
+            <p class="excerpt">Let your stories breathe here with visuals and meaningful content that feels personal.</p>
+          </article>
+        </section>
+      </main>
 
-    <nav class="post-nav">
-  <a href="first-post.html">← Previous Post</a>
-  <a href="second-post.html" style="float: right;">Next Post →</a>
-</nav>
+      <aside class="sidebar">
+        <div class="widget">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Life</a></li>
+            <li><a href="#">Style</a></li>
+            <li><a href="#">Motherhood</a></li>
+            <li><a href="#">Relationships</a></li>
+            <li><a href="#">Travel</a></li>
+          </ul>
+        </div>
 
-  </main>
-    <aside class="sidebar">
-    <h3>Categories</h3>
-    <ul>
-      <li><a href="#">Life</a></li>
-      <li><a href="#">Style</a></li>
-      <li><a href="#">Travel</a></li>
-      <li><a href="#">Food</a></li>
-    </ul>
-  </aside>
+        <div class="widget newsletter">
+          <h3>Get the newsletter</h3>
+          <form>
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </aside>
+    </div>
 
-  <section class="newsletter">
-  <h3>Subscribe to My Newsletter</h3>
-  <form action="https://formspree.io/f/your-form-id" method="POST">
-    <input type="email" name="email" placeholder="Your email address" required />
-    <button type="submit">Subscribe</button>
-  </form>
-</section>
+    <footer>
+      <p>&copy; 2025 Wael Hannachi. All rights reserved.</p>
+    </footer>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Wael Hannachi. All rights reserved.</p>
-  </footer>
+  <div class="newsletter-popup">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h3>Subscribe to Our Newsletter</h3>
+      <p>Stay updated with the latest posts directly in your inbox.</p>
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>

@@ -1,11 +1,18 @@
+/* Reset and basic setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Georgia', serif;
-  background-color: #ffffff;
-  color: #222;
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 0 20px;
-  line-height: 1.7;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
 header {
@@ -14,54 +21,67 @@ header {
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
   margin-bottom: 10px;
-  font-weight: normal;
 }
 
 nav a {
-  margin: 0 12px;
+  margin: 0 10px;
   text-decoration: none;
-  color: #999;
-  font-size: 0.95em;
+  color: #555;
+  font-weight: bold;
 }
 
 nav a:hover {
-  color: #333;
+  color: #111;
 }
 
-h2 {
-  font-size: 1.8em;
-  margin-bottom: 0.3em;
+main {
+  margin-bottom: 60px;
 }
 
-p {
-  font-size: 1.1em;
-  margin-bottom: 1.3em;
+.post-preview {
+  margin-bottom: 40px;
 }
 
+.post-preview h2 a {
+  text-decoration: none;
+  color: #222;
+  font-family: 'Playfair Display', serif;
+}
+
+.post-preview h2 a:hover {
+  color: #555;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
   text-align: center;
+  font-size: 0.9rem;
   color: #aaa;
-  font-size: 0.9em;
-  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
 }
+
+/* Mobile */
 @media (max-width: 600px) {
   body {
-    padding: 0 15px;
-    font-size: 1em;
+    padding: 10px;
   }
 
   header h1 {
-    font-size: 1.8em;
+    font-size: 2rem;
   }
 
   nav a {
     display: inline-block;
-    margin: 6px 6px;
-  }
-
-  h2 {
-    font-size: 1.4em;
+    margin: 5px;
   }
 }

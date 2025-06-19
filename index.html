@@ -1,89 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wael's Journal</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-        <div class="dark-toggle">
-  <label class="switch">
-    <input type="checkbox" id="darkModeToggle">
-    <span class="slider"></span>
-  </label>
-</div>
+  <header class="site-header">
+    <div class="logo">Wael's Journal</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#">Praise</a>
+      <a href="#">Connect</a>
+      <a href="#">Blog</a>
+    </nav>
+  </header>
 
-      <h1 class="logo">Wael’s Journal</h1>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-      </nav>
-    </header>
-
-    <div class="content blog-layout">
-      <main>
-        <section class="posts">
-          <article class="post-card">
-            <a href="blog/first-post.html">
-              <img src="blog/images/first-post.jpg" alt="First Post Thumbnail">
-              <h2>My First Blog Post</h2>
-            </a>
-            <p class="date">June 2025</p>
-            <p class="excerpt">This is where your personal, observational, deep, or even funny blog stories start.</p>
-          </article>
-
-          <article class="post-card">
-            <a href="blog/second-post.html">
-              <img src="blog/images/second_post.jpg" alt="Second Post Thumbnail">
-              <h2>My Second Post</h2>
-            </a>
-            <p class="date">June 2025</p>
-            <p class="excerpt">Let your stories breathe here with visuals and meaningful content that feels personal.</p>
-          </article>
-        </section>
-      </main>
-
-      <aside class="sidebar">
-        <div class="widget">
-          <h3>Categories</h3>
-          <ul>
-            <li><a href="#">Life</a></li>
-            <li><a href="#">Style</a></li>
-            <li><a href="#">Motherhood</a></li>
-            <li><a href="#">Relationships</a></li>
-            <li><a href="#">Travel</a></li>
-          </ul>
+  <main class="post-feed">
+    <article class="post-card">
+      <img src="blog/images/first-post.jpg" alt="First post" />
+      <div class="post-content">
+        <div class="meta">By Fedi • June 18, 2025 • 3 min read</div>
+        <h2><a href="blog/first-post.html">Not Only on Birthdays</a></h2>
+        <p>My father showed up on his birthday, which isn’t unusual except that he died in 2020. He was driving a 1934 Ford with an...</p>
+        <div class="post-footer">
+          <span>692 views</span>
+          <span>1 comment</span>
+          <span>❤ 10</span>
         </div>
+      </div>
+    </article>
 
-        <div class="widget newsletter">
-          <h3>Get the newsletter</h3>
-          <form>
-            <input type="email" placeholder="Your email" required>
-            <button type="submit">Subscribe</button>
-          </form>
+    <article class="post-card">
+      <img src="blog/images/second-post.jpg" alt="Second post" />
+      <div class="post-content">
+        <div class="meta">By Fedi • June 19, 2025 • 4 min read</div>
+        <h2><a href="blog/second-post.html">Swimmers of Sky and Fire</a></h2>
+        <p>Swimmers of Sky and Fire—I went walking down the beach and saw a trail of light like dreams suspended in night mist...</p>
+        <div class="post-footer">
+          <span>803 views</span>
+          <span>5 comments</span>
+          <span>❤ 21</span>
         </div>
-      </aside>
-    </div>
+      </div>
+    </article>
+  </main>
 
-    <footer>
-      <p>&copy; 2025 Wael Hannachi. All rights reserved.</p>
-    </footer>
-  </div>
-
-  <div class="newsletter-popup">
-    <div class="popup-content">
-      <span class="close-popup">&times;</span>
-      <h3>Subscribe to Our Newsletter</h3>
-      <p>Stay updated with the latest posts directly in your inbox.</p>
-      <input type="email" placeholder="Enter your email">
-      <button>Subscribe</button>
-    </div>
-  </div>
-
-  <script src="main.js"></script>
+  <footer>
+    &copy; 2025 Wael Hannachi. All rights reserved.
+  </footer>
 </body>
 </html>
